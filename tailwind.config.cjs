@@ -10,7 +10,7 @@ module.exports = {
         'not-full': '1280px'
       },
       padding: {
-        'container-h-padding': 'padding: 1.25rem'
+        'container-padding': 'padding: 1.25rem'
       }
     },
   },
