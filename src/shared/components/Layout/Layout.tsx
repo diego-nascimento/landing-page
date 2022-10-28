@@ -1,6 +1,10 @@
 import React from 'react';
-import { Container as Header, HeaderTypes, Headers } from '@/components/Header';
-import { Container as Footer } from '@/components/Footer';
+import {
+  Container as Header,
+  HeaderTypes,
+  Headers,
+} from '@/shared/components/Header';
+import { Container as Footer } from '@/shared/components/Footer';
 
 interface Props {
   children: React.ReactNode;
