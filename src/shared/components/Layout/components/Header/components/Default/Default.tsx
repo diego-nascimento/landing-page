@@ -1,7 +1,8 @@
 import React from 'react';
-import { HeaderTypes } from '@/components/Header/';
+
 import { Container, ListItens, Logo, MenuIcon } from './Components';
 import { useResizeHook } from '../../hooks';
+import { HeaderTypes } from '../../Container/types';
 
 export const Default = ({ logo, MenuItens }: HeaderTypes) => {
   const { CloseMenu, OpenMenu, open } = useResizeHook();

@@ -6,6 +6,8 @@ interface Props {
   footerSelected?: Footers;
 }
 
-export const Container = ({ footerSelected = Footers.default }: Props) => {
+export const FooterContainer = ({
+  footerSelected = Footers.default,
+}: Props) => {
   return <>{footerSelected === Footers.default && <Default />}</>;
 };

@@ -1,6 +1,7 @@
 import React from 'react';
-import { MenuItemTypes } from '@/components/Header/';
+
 import { MenuItem, MenuIcon } from '../';
+import { MenuItemTypes } from '../../../../Container/types';
 
 interface Props {
   MenuItems: MenuItemTypes[];

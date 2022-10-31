@@ -1,8 +1,10 @@
-import React, { use } from 'react';
+import React from 'react';
 import { Home as HomeComponent } from '@/modules/Home';
-import { HeaderTypes } from '@/shared/components/Header';
 import { GetStaticProps } from 'next';
-import { headerService } from '@/shared/components/Header/services';
+import {
+  headerService,
+  HeaderTypes,
+} from '@/shared/components/Layout/components';
 
 interface Props {
   headerProps: HeaderTypes;

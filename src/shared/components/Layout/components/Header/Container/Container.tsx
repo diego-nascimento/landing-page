@@ -7,7 +7,7 @@ interface Props {
   headerProps: HeaderTypes;
 }
 
-export const Container = ({
+export const HeaderContainer = ({
   headerSelected = Headers.default,
   headerProps,
 }: Props) => {
