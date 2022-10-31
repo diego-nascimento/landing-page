@@ -1,5 +1,5 @@
 import React from 'react';
-import { LogoTypes } from '@/components/Header/';
+import { LogoTypes } from '../../../../Container/types';
 
 interface Props {
   logo: LogoTypes;
@@ -7,7 +7,7 @@ interface Props {
 
 export const Logo = ({ logo: { logo, url } }: Props) => {
   return (
-    <div className=" md:w-full md:flex md:justify-center">
+    <div className=" md:w-full md:flex md:justify-center z-0">
       <a href={url}>
         <img src={logo} alt="Logo" />
       </a>

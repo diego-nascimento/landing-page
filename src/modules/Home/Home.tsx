@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from '@/shared/components/Layout';
 import { FullWidthContainer } from '@/shared/components/Container';
-import { HeaderTypes } from '@/shared/components/Header';
+import { HeaderTypes } from '@/shared/components/Layout/components';
 
 interface Props {
   headerProps: HeaderTypes;

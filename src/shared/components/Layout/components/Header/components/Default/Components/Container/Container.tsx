@@ -15,7 +15,7 @@ export const Container = ({ children, open, handleClick }: Props) => {
   return (
     <FullWidthContainer>
       <BlackScreen handleClick={handleClick} open={open} />
-      <div className="w-full flex justify-center border-b-4 border-b-black">
+      <div className="w-full flex justify-center relative border-b-4 border-b-black">
         <NotFullWidthContainer>
           <div
             className="flex justify-between items-center px-5

@@ -14,7 +14,14 @@ export type MenuItemTypes = {
     subLabel?: string
 }
 
+export type SocialTypes = {
+    facebookUrl?: string
+    instagramUrl?: string
+    tiktokUrl?: string
+}
+
 export interface HeaderTypes {
     logo: LogoTypes
     MenuItens: MenuItemTypes[]
+    social: SocialTypes
 }

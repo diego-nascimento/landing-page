@@ -14,7 +14,11 @@ export const HeaderContainer = ({
   return (
     <>
       {headerSelected === Headers.default && (
-        <Default MenuItens={headerProps.MenuItens} logo={headerProps.logo} />
+        <Default
+          MenuItens={headerProps.MenuItens}
+          logo={headerProps.logo}
+          social={headerProps.social}
+        />
       )}
     </>
   );

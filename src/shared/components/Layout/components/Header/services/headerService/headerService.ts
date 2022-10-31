@@ -29,6 +29,11 @@ const HeaderPropsMocked: HeaderTypes = {
         url: 'google.com.br',
       },
     ],
+    social: {
+      facebookUrl: 'asd',
+      instagramUrl: 'asdjkoias',
+      tiktokUrl: 'asdjioa'
+    }
   };
 
 export const headerService = async (): Promise<HeaderTypes> => {
