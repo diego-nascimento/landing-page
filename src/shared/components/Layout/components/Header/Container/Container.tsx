@@ -1,15 +1,18 @@
 import React from 'react';
-import { Default } from '../components';
-import { Headers, HeaderTypes } from './types';
+import { Default } from '../components/desktop/Default';
+
+import { Headers, HeaderTypes, mobileHeaders } from './types';
 
 interface Props {
   headerSelected?: Headers;
+  mobileHeaderSelected?: mobileHeaders;
   headerProps: HeaderTypes;
 }
 
 export const HeaderContainer = ({
   headerSelected = Headers.default,
   headerProps,
+  mobileHeaderSelected = mobileHeaders.default,
 }: Props) => {
   return (
     <>
@@ -18,6 +21,7 @@ export const HeaderContainer = ({
           MenuItens={headerProps.MenuItens}
           logo={headerProps.logo}
           social={headerProps.social}
+          mobileHeader={mobileHeaderSelected}
         />
       )}
     </>

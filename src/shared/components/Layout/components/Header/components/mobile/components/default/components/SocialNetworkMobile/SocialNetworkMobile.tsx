@@ -1,6 +1,7 @@
 import React from 'react';
-import { SocialTypes } from '../../../../Container/types';
+
 import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa';
+import { SocialTypes } from '../../../../../../Container/types';
 
 import { SocialLink } from './components';
 

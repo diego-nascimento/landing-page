@@ -1,5 +1,5 @@
 import React from 'react';
-import { LogoTypes } from '../../../../Container/types';
+import { LogoTypes } from '../../../../../Container/types';
 
 interface Props {
   logo: LogoTypes;

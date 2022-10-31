@@ -1,4 +1,4 @@
-import { MenuItemTypes } from '@/components/Header/Container/types';
+import { MenuItemTypes } from '@/shared/components/Layout/components/Header/Container/types';
 import React from 'react';
 
 interface Props {
@@ -7,7 +7,7 @@ interface Props {
 
 export const MenuItem = ({ Item }: Props) => {
   return (
-    <li className=" cursor-pointer px-3 opacity-75 border-2 border-black w-full py-1 rounded-lg md:border-0">
+    <li className=" cursor-pointer px-3 opacity-75 border-2 border-black w-full py-1 rounded-lg">
       <a
         href={Item.url}
         className="flex flex-col items-start h-10 justify-center"

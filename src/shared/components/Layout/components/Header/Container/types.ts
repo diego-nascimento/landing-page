@@ -2,6 +2,10 @@ export enum Headers {
     default = 'default'
 }
 
+export enum mobileHeaders {
+    default = 'default'
+}
+
 export type LogoTypes = {
     logo: string,
     url: string
@@ -24,4 +28,5 @@ export interface HeaderTypes {
     logo: LogoTypes
     MenuItens: MenuItemTypes[]
     social: SocialTypes
+    mobileHeader: mobileHeaders
 }

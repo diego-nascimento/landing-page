@@ -10,7 +10,7 @@ export const BlackScreen = ({ handleClick, open }: Props) => {
     <>
       {!!open && (
         <div
-          className="fixed top-0 left-0 z-10 w-screen h-screen bg-black opacity-70 md:hidden transition-opacity"
+          className="fixed top-0 left-0 z-0 w-screen h-screen bg-black opacity-70 md:hidden transition-opacity"
           onClick={handleClick}
         />
       )}

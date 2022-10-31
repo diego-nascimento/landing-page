@@ -3,7 +3,6 @@ import {
   NotFullWidthContainer,
 } from '@/shared/components/Container';
 import React from 'react';
-import { BlackScreen } from '../BlackScreen';
 
 interface Props {
   children: React.ReactNode;
@@ -11,11 +10,10 @@ interface Props {
   handleClick: () => void;
 }
 
-export const Container = ({ children, open, handleClick }: Props) => {
+export const Container = ({ children }: Props) => {
   return (
     <FullWidthContainer>
-      <BlackScreen handleClick={handleClick} open={open} />
-      <div className="w-full flex justify-center relative border-b-4 border-b-black">
+      <div className="  w-full flex justify-center relative border-b-4 border-b-black ">
         <NotFullWidthContainer>
           <div
             className="flex justify-between items-center px-5
