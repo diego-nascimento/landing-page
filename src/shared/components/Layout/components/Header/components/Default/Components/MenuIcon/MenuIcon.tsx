@@ -7,10 +7,12 @@ interface Props {
 
 export const MenuIcon = ({ handleClick }: Props) => {
   return (
-    <AiOutlineMenu
-      className="cursor-pointer md:hidden hover:rotate-180 transition-transform  ease-out"
-      size={30}
-      onClick={() => handleClick()}
-    />
+    <div className="pb-5 md:hidden">
+      <AiOutlineMenu
+        className="cursor-pointer md:hidden hover:rotate-180 transition-transform  ease-out"
+        size={30}
+        onClick={() => handleClick()}
+      />
+    </div>
   );
 };
