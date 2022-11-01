@@ -7,27 +7,15 @@ import { MobileContainer } from '../../mobile';
 
 import { Container, ListItens, Logo } from './Components';
 
-export const Default = ({
-  logo,
-  MenuItens,
-  social,
-  mobileHeader,
-}: HeaderTypes) => {
+export const Default = (data: HeaderTypes) => {
   const { CloseMenu, OpenMenu, open } = useResizeHook();
 
   return (
     <Container open={open} handleClick={CloseMenu}>
       <MenuIcon handleClick={OpenMenu} />
-      <Logo logo={logo} />
-      <ListItens MenuItems={MenuItens} />
-      <MobileContainer
-        MenuItens={MenuItens}
-        open={open}
-        logo={logo}
-        mobileHeader={mobileHeader}
-        social={social}
-        handleClose={CloseMenu}
-      />
+      <Logo logo={data.logo} />
+      <ListItens MenuItems={data.MenuItens} />
+      <MobileContainer data={{ ...data, handleClose: CloseMenu, open }} />
     </Container>
   );
 };

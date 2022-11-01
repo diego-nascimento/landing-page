@@ -6,6 +6,6 @@ interface Props {
 
 export const Main = ({ children }: Props) => {
   return (
-    <main className="w-full flex justify-center min-h-screen ">{children}</main>
+    <main className="w-full flex justify-center flex-grow ">{children}</main>
   );
 };

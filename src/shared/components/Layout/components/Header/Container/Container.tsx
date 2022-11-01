@@ -3,6 +3,7 @@ import { Default } from '../components/desktop/Default';
 
 import { Headers, HeaderTypes, mobileHeaders } from './types';
 
+type HeaderProps = {};
 interface Props {
   headerSelected?: Headers;
   mobileHeaderSelected?: mobileHeaders;
@@ -14,6 +15,7 @@ export const HeaderContainer = ({
   headerProps,
   mobileHeaderSelected = mobileHeaders.default,
 }: Props) => {
+  if (!!!headerProps) return null;
   return (
     <>
       {headerSelected === Headers.default && (

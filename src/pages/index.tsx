@@ -1,26 +1,34 @@
 import React from 'react';
 import { Home as HomeComponent } from '@/modules/Home';
 import { GetStaticProps } from 'next';
-import {
-  headerService,
-  HeaderTypes,
-} from '@/shared/components/Layout/components';
+import { headerService } from '@/shared/components/Layout/components';
+import { footerService } from '@/shared/components/Layout/components/Footer/services';
 
-interface Props {
-  headerProps: HeaderTypes;
-}
+import { LayoutProps } from '@/shared/components';
 
-const Home = ({ headerProps }: Props) => {
-  return <HomeComponent headerProps={headerProps} />;
+interface Props extends LayoutProps {}
+
+const Home = (data: Props) => {
+  return (
+    <HomeComponent
+      HeaderProps={data.HeaderProps}
+      footerProps={data.footerProps}
+      footerSelected={data.footerSelected}
+      headerSelected={data.headerSelected}
+      mobileHeaderSelected={data.mobileHeaderSelected}
+    />
+  );
 };
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
   const headerProps = await headerService();
+  const footerProps = await footerService();
   return {
     props: {
-      headerProps: headerProps,
+      HeaderProps: headerProps,
+      footerProps: footerProps,
     },
   };
 };

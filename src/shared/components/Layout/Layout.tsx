@@ -7,29 +7,33 @@ import {
   Main,
   mobileHeaders,
 } from '@/shared/components/Layout/components';
+import { Footers, FooterTypes } from './components/Footer/Container/types';
 
-interface Props {
-  children: React.ReactNode;
+export type LayoutProps = {
   HeaderProps: HeaderTypes;
   headerSelected?: Headers;
   mobileHeaderSelected?: mobileHeaders;
+  footerSelected?: Footers;
+  footerProps: FooterTypes;
+};
+interface Props {
+  children: React.ReactNode;
+  data: LayoutProps;
 }
 
-export const Layout = ({
-  children,
-  HeaderProps,
-  headerSelected,
-  mobileHeaderSelected,
-}: Props) => {
+export const Layout = ({ data, children }: Props) => {
   return (
     <div className="min-h-screen flex flex-col justify-between">
       <Header
-        headerProps={HeaderProps}
-        headerSelected={headerSelected}
-        mobileHeaderSelected={mobileHeaderSelected}
+        headerProps={data.HeaderProps}
+        headerSelected={data.headerSelected}
+        mobileHeaderSelected={data.mobileHeaderSelected}
       />
       <Main>{children}</Main>
-      <Footer />
+      <Footer
+        footerData={data.footerProps}
+        footerSelected={data.footerSelected}
+      />
     </div>
   );
 };

@@ -1,6 +1,9 @@
-import { FullWidthContainer } from '@/shared/components';
 import React from 'react';
+import { FooterTypes } from '../../Container/types';
+import { Container } from './components';
 
-export const Default = () => {
-  return <FullWidthContainer>asd</FullWidthContainer>;
+interface Props extends FooterTypes {}
+
+export const Default = (data: Props) => {
+  return <Container>asd</Container>;
 };

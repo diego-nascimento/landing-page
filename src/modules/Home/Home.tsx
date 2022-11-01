@@ -1,15 +1,12 @@
 import React from 'react';
-import { Layout } from '@/shared/components/Layout';
+import { Layout, LayoutProps } from '@/shared/components/Layout';
 import { FullWidthContainer } from '@/shared/components/Container';
-import { HeaderTypes } from '@/shared/components/Layout/components';
 
-interface Props {
-  headerProps: HeaderTypes;
-}
+interface Props extends LayoutProps {}
 
-export const Home = ({ headerProps }: Props) => {
+export const Home = (data: Props) => {
   return (
-    <Layout HeaderProps={headerProps}>
+    <Layout data={data}>
       <FullWidthContainer>
         <div className="bg-red-500 w-full">asd</div>
       </FullWidthContainer>
