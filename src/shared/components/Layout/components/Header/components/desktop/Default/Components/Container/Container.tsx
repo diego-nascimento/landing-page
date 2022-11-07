@@ -15,12 +15,12 @@ export const Container = ({ children }: Props) => {
     <FullWidthContainer>
       <div className="  w-full flex justify-center relative border-b-4 border-b-black ">
         <NotFullWidthContainer>
-          <div
+          <nav
             className="flex justify-between items-center px-5
           md:flex-col w-full md:py-2"
           >
             {children}
-          </div>
+          </nav>
         </NotFullWidthContainer>
       </div>
     </FullWidthContainer>

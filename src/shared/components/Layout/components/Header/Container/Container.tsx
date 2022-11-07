@@ -17,7 +17,7 @@ export const HeaderContainer = ({
 }: Props) => {
   if (!!!headerProps) return null;
   return (
-    <>
+    <header>
       {headerSelected === Headers.default && (
         <Default
           MenuItens={headerProps.MenuItens}
@@ -34,6 +34,6 @@ export const HeaderContainer = ({
           mobileHeader={mobileHeaderSelected}
         />
       )}
-    </>
+    </header>
   );
 };
