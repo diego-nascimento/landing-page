@@ -1,9 +1,9 @@
 import React from 'react';
 import { HeaderTypes } from '../../../../Container/types';
 import { BlackScreen } from '../../../desktop/Default/Components';
-import { Container, SocialNetworkMobile } from './components';
-import { MenuItem } from './components/MenuItem';
-import { MenuIcon } from '@/shared/components';
+import { Container, SocialNetworkMobile, ListItem } from './components';
+
+import { CloseIcon } from '@/shared/components';
 
 interface Props extends HeaderTypes {
   open: boolean;
@@ -15,10 +15,8 @@ export const Default = ({ MenuItens, social, open, handleClose }: Props) => {
     <>
       <BlackScreen handleClick={handleClose} open={open} />
       <Container open={open}>
-        <MenuIcon handleClick={handleClose} />
-        {MenuItens.map((Item) => {
-          return <MenuItem Item={Item} key={Item.id} />;
-        })}
+        <CloseIcon handleClick={handleClose} />
+        <ListItem MenuItems={MenuItens} />
         <SocialNetworkMobile
           facebookUrl={social.facebookUrl}
           instagramUrl={social.instagramUrl}

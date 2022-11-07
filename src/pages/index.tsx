@@ -14,8 +14,8 @@ const Home = (data: Props) => {
       HeaderProps={data.HeaderProps}
       footerProps={data.footerProps}
       footerSelected={data.footerSelected}
-      headerSelected={data.headerSelected}
-      mobileHeaderSelected={data.mobileHeaderSelected}
+      headerSelected={data.HeaderProps.headerSelected}
+      mobileHeaderSelected={data.HeaderProps.mobileHeader}
     />
   );
 };

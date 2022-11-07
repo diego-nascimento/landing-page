@@ -1,5 +1,5 @@
 import React from 'react';
-import { Default } from '../components/desktop/Default';
+import { Default, Elegant } from '../components/desktop/';
 
 import { Headers, HeaderTypes, mobileHeaders } from './types';
 
@@ -20,6 +20,14 @@ export const HeaderContainer = ({
     <>
       {headerSelected === Headers.default && (
         <Default
+          MenuItens={headerProps.MenuItens}
+          logo={headerProps.logo}
+          social={headerProps.social}
+          mobileHeader={mobileHeaderSelected}
+        />
+      )}
+      {headerSelected === Headers.elegant && (
+        <Elegant
           MenuItens={headerProps.MenuItens}
           logo={headerProps.logo}
           social={headerProps.social}

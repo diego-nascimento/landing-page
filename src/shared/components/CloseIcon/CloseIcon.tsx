@@ -1,27 +1,26 @@
 import React from 'react';
-import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineClose } from 'react-icons/ai';
 
 interface Props {
   handleClick: () => void;
   iconColor?: 'white' | 'black';
-  scrolled?: boolean;
+  iconSize?: number;
 }
 
-export const MenuIcon = ({
+export const CloseIcon = ({
   handleClick,
   iconColor = 'black',
-  scrolled = false,
+  iconSize = 40,
 }: Props) => {
   const handleColor = () => {
-    const color = iconColor === 'white' ? 'white' : 'black';
-    return scrolled ? 'black' : color;
+    return iconColor === 'white' ? 'white' : 'black';
   };
 
   return (
     <div className=" md:hidden">
-      <AiOutlineMenu
+      <AiOutlineClose
         className="cursor-pointer md:hidden hover:rotate-180 transition-transform  ease-out"
-        size={30}
+        size={iconSize}
         onClick={() => handleClick()}
         color={handleColor()}
       />

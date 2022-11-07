@@ -2,7 +2,7 @@ import { MenuIcon } from '@/shared/components/MenuIcon';
 import React from 'react';
 
 import { HeaderTypes } from '../../../Container/types';
-import { useResizeHook } from '../../../hooks';
+import { useResizeHook } from '../../../../../../../hooks';
 import { MobileContainer } from '../../mobile';
 
 import { Container, ListItens, Logo } from './Components';

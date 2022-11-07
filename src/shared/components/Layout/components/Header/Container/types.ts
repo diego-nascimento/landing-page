@@ -1,9 +1,11 @@
 export enum Headers {
-    default = 'default'
+    default = 'default',
+    elegant = 'elegant'
 }
 
 export enum mobileHeaders {
-    default = 'default'
+    default = 'default',
+    elegant = 'elegant'
 }
 
 export type LogoTypes = {
@@ -28,5 +30,6 @@ export interface HeaderTypes {
     logo: LogoTypes
     MenuItens: MenuItemTypes[]
     social: SocialTypes
-    mobileHeader: mobileHeaders
+    mobileHeader?: mobileHeaders
+    headerSelected?: Headers
 }

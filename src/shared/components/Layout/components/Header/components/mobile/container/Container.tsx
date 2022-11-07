@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeaderTypes, mobileHeaders } from '../../../Container/types';
-import { Default } from '../components';
+import { Default, Elegant } from '../components';
 
 interface MobileContainerProps extends HeaderTypes {
   open: boolean;
@@ -16,6 +16,16 @@ export const MobileContainer = ({ data }: Props) => {
     <>
       {data.mobileHeader === mobileHeaders.default && (
         <Default
+          MenuItens={data.MenuItens}
+          open={data.open}
+          logo={data.logo}
+          social={data.social}
+          mobileHeader={data.mobileHeader}
+          handleClose={data.handleClose}
+        />
+      )}
+      {data.mobileHeader === mobileHeaders.elegant && (
+        <Elegant
           MenuItens={data.MenuItens}
           open={data.open}
           logo={data.logo}

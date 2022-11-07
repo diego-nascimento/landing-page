@@ -1,5 +1,6 @@
 export enum Footers {
-    default = 'default'
+    default = 'default',
+    elegant = 'elegant'
 }
 
 
