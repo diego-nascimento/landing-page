@@ -12,8 +12,8 @@ interface Props {
 export const Container = ({ children, scrolled }: Props) => {
   return (
     <div
-      className={`w-full fixed top-0 left-0 transition-colors ${
-        scrolled ? 'bg-white' : 'bg-transparent'
+      className={`w-full fixed top-0 left-0 transition-colors  ${
+        scrolled ? 'bg-white shadow-lg' : 'bg-transparent'
       }`}
     >
       <FullWidthContainer>
