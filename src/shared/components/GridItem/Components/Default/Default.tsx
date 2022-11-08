@@ -14,8 +14,8 @@ export const Default = ({
   center = true,
 }: Props) => {
   return (
-    <Container>
-      {!!image && <ImageComponent data={image} callToAction={callToAction} />}
+    <Container callToAction={callToAction}>
+      {!!image && <ImageComponent data={image} />}
       {!!title && (
         <Title title={title} titleColor={textColor} center={center} />
       )}

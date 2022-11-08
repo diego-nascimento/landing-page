@@ -16,7 +16,7 @@ export const ListItems = ({ MenuItems, scrolled }: Props) => {
             <span
               className={`${
                 scrolled ? 'text-black' : 'text-white'
-              } uppercase text-xl tracking-widest font-bold cursor-pointer md:text-base`}
+              } uppercase text-xl tracking-widest font-bold cursor-pointer md:text-base `}
             >
               {Item.label}
             </span>

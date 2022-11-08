@@ -6,6 +6,7 @@ export * from './CloseIcon'
 export * from './Grid'
 export * from './GridItem'
 export * from './Typography'
+export * from './Grid-1_2'
 
 
 

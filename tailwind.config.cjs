@@ -11,6 +11,10 @@ module.exports = {
       },
       padding: {
         'container-padding': 'padding: 1.25rem'
+      },
+      gridTemplateColumns: {
+        'right-bigger': '1fr, 2fr',
+        'left-bigger': '2fr, 1fr'
       }
     },
   },
