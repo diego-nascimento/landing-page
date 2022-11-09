@@ -1,3 +1,3 @@
 export * from '../../shared/Container'
-export * from './ImageComponent'
+export * from '../../shared/ImageComponent'
 

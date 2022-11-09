@@ -22,7 +22,9 @@ export const Grid1_2 = ({
   return (
     <div>
       {!!title && <Title tag="h1" text={title} titleColor={titleColor} />}
-      <ul className={`grid grid-cols-1 gap-5 md:gap-0 ${columns}  w-full mt-5`}>
+      <ul
+        className={`grid grid-cols-1 gap-5 md:gap-0 ${columns}  w-full mt-5 rounded-lg overflow-hidden`}
+      >
         {children}
       </ul>
     </div>

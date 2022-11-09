@@ -20,7 +20,7 @@ export const Container = ({ children }: Props) => {
           },
         }}
       >
-        <div className="flex flex-col justify-center items-center w-full h-full px-5 mt-10 md:mt-20">
+        <div className="flex flex-col justify-center items-center w-full h-full px-5 mt-10 md:mt-20 ">
           <NotFullWidthContainer centered>{children}</NotFullWidthContainer>
         </div>
       </FullScreenContainer>

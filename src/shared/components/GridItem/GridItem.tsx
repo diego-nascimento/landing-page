@@ -1,4 +1,4 @@
-import { Default } from './Components';
+import { Default, Flip } from './Components';
 import { GridComponents, gridItemProps } from './types';
 
 interface Props extends gridItemProps {
@@ -14,6 +14,9 @@ export const GridItem = ({
     <>
       {gridComponent === GridComponents.default && (
         <Default {...data} textColor={textColor} />
+      )}
+      {gridComponent === GridComponents.flip && (
+        <Flip {...data} textColor={textColor} />
       )}
     </>
   );

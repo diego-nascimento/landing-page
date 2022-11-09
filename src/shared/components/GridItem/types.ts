@@ -2,7 +2,7 @@
 
 export enum GridComponents {
     default = 'default',
-    textOnly = 'textOnly'
+    flip = 'flip'
 }
 
 

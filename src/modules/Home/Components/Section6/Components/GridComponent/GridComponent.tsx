@@ -13,52 +13,53 @@ export const GridComponent = () => {
   return (
     <Grid title="Trying the foursome" columnsAmount={4}>
       <GridItem
-        gridComponent={GridComponents.default}
+        gridComponent={GridComponents.flip}
+        image={image}
+        title={'Test title'}
+        text={text}
+        callToAction={{ url: '/google.com.br' }}
+        textColor="black"
+      />
+      <GridItem
+        gridComponent={GridComponents.flip}
+        image={image}
+        title={'Test title'}
+        text={text}
+      />
+      <GridItem
+        gridComponent={GridComponents.flip}
         image={image}
         title={'Test title'}
         text={text}
         callToAction={{ url: '/google.com.br' }}
       />
       <GridItem
-        gridComponent={GridComponents.default}
+        gridComponent={GridComponents.flip}
         image={image}
         title={'Test title'}
         text={text}
       />
       <GridItem
-        gridComponent={GridComponents.default}
-        image={image}
-        title={'Test title'}
-        text={text}
-        callToAction={{ url: '/google.com.br' }}
-      />
-      <GridItem
-        gridComponent={GridComponents.default}
+        gridComponent={GridComponents.flip}
         image={image}
         title={'Test title'}
         text={text}
       />
       <GridItem
-        gridComponent={GridComponents.default}
+        gridComponent={GridComponents.flip}
         image={image}
         title={'Test title'}
         text={text}
       />
       <GridItem
-        gridComponent={GridComponents.default}
-        image={image}
-        title={'Test title'}
-        text={text}
-      />
-      <GridItem
-        gridComponent={GridComponents.default}
+        gridComponent={GridComponents.flip}
         image={image}
         title={'Test title'}
         text={text}
         callToAction={{ url: '/google.com.br' }}
       />
       <GridItem
-        gridComponent={GridComponents.default}
+        gridComponent={GridComponents.flip}
         image={image}
         title={'Test title'}
         text={text}

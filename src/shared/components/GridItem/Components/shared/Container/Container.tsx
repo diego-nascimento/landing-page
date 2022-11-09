@@ -11,7 +11,7 @@ export const Container = ({ children, callToAction }: Props) => {
     return (
       <a
         href={callToAction.url}
-        className="cursor-pointer hover:shadow-xl transition-all duration-500 hover:scale-105 hover:z-10"
+        className="cursor-pointer hover:shadow-xl transition-all duration-500 hover:scale-105 hover:z-10 "
       >
         <ContainerWithNoCallToAction>{children}</ContainerWithNoCallToAction>
       </a>
@@ -21,6 +21,8 @@ export const Container = ({ children, callToAction }: Props) => {
 
 const ContainerWithNoCallToAction = ({ children }: Props) => {
   return (
-    <li className="flex justify-center flex-col w-full p-5 ">{children}</li>
+    <li className="flex justify-center flex-col w-full p-5 group perspective min-h-[400px]">
+      {children}
+    </li>
   );
 };

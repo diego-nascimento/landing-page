@@ -1,7 +1,7 @@
 import React from 'react';
 import { gridItemProps } from '../../types';
-import { Container, ImageComponent } from './components';
-import { Text, Title } from '../shared';
+import { Container } from './components';
+import { Text, Title, ImageComponent } from '../shared';
 
 interface Props extends gridItemProps {}
 
