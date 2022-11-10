@@ -7,7 +7,7 @@ interface Props {
 
 export const Front = ({ title, textColor = 'black' }: Props) => {
   const color = useMemo(
-    () => (textColor === 'black' ? 'text-white' : 'text-black'),
+    () => (textColor === 'black' ? 'text-black' : 'text-white'),
     [textColor],
   );
 
