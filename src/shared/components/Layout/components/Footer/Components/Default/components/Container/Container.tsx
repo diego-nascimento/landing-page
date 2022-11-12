@@ -12,7 +12,7 @@ export const Container = ({ children }: Props) => {
   return (
     <FullWidthContainer>
       <NotFullWidthContainer>
-        <div className="px-5 py-5">{children}</div>
+        <div className="px-5 pt-5">{children}</div>
       </NotFullWidthContainer>
     </FullWidthContainer>
   );

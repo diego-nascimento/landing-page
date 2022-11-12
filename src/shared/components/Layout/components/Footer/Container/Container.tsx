@@ -15,7 +15,11 @@ export const FooterContainer = ({
   return (
     <>
       {footerSelected === Footers.default && (
-        <Default logoUrl={footerData.logoUrl} sections={footerData.sections} />
+        <Default
+          logoUrl={footerData.logoUrl}
+          sections={footerData.sections}
+          socials={footerData.socials}
+        />
       )}
     </>
   );

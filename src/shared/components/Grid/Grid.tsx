@@ -25,7 +25,7 @@ export const Grid = ({
     <section
       className={`flex flex-col items-center w-full ${
         withShadow && 'shadow-lg'
-      } p-5 pt-0`}
+      } p-5 pt-0 `}
     >
       {!!title && <Title tag="h1" text={title} titleColor={titleColor} />}
       <ul className={`grid mt-0  ${columns} w-full`}>{children}</ul>

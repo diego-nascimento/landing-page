@@ -21,7 +21,7 @@ export const Container = ({ children, callToAction }: Props) => {
 
 const ContainerWithNoCallToAction = ({ children }: Props) => {
   return (
-    <li className="flex justify-center flex-col w-full py-5 md:p-5 group perspective min-h-[400px]">
+    <li className="flex justify-center flex-col w-full py-5 md:p-5 group perspective ">
       {children}
     </li>
   );
