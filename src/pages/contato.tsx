@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home as HomeComponent } from '@/modules';
+import { Contact as ContactComponent } from '@/modules';
 import { GetStaticProps } from 'next';
 import { headerService } from '@/shared/components/Layout/components';
 import { footerService } from '@/shared/components/Layout/components/Footer/services';
@@ -10,7 +10,7 @@ interface Props extends LayoutProps {}
 
 const Home = (data: Props) => {
   return (
-    <HomeComponent
+    <ContactComponent
       HeaderProps={data.HeaderProps}
       footerProps={data.footerProps}
       footerSelected={data.footerSelected}

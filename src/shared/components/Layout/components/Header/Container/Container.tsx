@@ -3,7 +3,6 @@ import { Default, Elegant } from '../components/desktop/';
 
 import { Headers, HeaderTypes, mobileHeaders } from './types';
 
-type HeaderProps = {};
 interface Props {
   headerSelected?: Headers;
   mobileHeaderSelected?: mobileHeaders;
@@ -12,7 +11,7 @@ interface Props {
 
 export const HeaderContainer = ({
   headerSelected = Headers.default,
-  headerProps,
+  headerProps: { whiteBackground = false, ...headerProps },
   mobileHeaderSelected = mobileHeaders.default,
 }: Props) => {
   if (!!!headerProps) return null;
@@ -32,6 +31,7 @@ export const HeaderContainer = ({
           logo={headerProps.logo}
           social={headerProps.social}
           mobileHeader={mobileHeaderSelected}
+          whiteBackground={whiteBackground}
         />
       )}
     </header>

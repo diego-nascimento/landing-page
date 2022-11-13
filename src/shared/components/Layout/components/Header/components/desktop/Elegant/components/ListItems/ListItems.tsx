@@ -5,9 +5,10 @@ import { MenuItemTypes } from '../../../../../Container/types';
 interface Props {
   MenuItems: MenuItemTypes[];
   scrolled: boolean;
+  whiteBackground?: boolean;
 }
 
-export const ListItems = ({ MenuItems, scrolled }: Props) => {
+export const ListItems = ({ MenuItems, scrolled, whiteBackground }: Props) => {
   return (
     <ul className=" gap-12 md:flex hidden md:flex-row">
       {MenuItems.map((Item) => (
@@ -15,7 +16,7 @@ export const ListItems = ({ MenuItems, scrolled }: Props) => {
           <li>
             <span
               className={`${
-                scrolled ? 'text-black' : 'text-white'
+                scrolled || whiteBackground ? 'text-black' : 'text-white'
               } uppercase text-xl tracking-widest font-bold cursor-pointer md:text-base `}
             >
               {Item.label}

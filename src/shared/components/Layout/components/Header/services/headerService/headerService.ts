@@ -10,24 +10,23 @@ const HeaderPropsMocked: HeaderTypes = {
     },
     MenuItens: [
       {
-        id: '123',
+        id: `${Math.random() * Math.random()*131}`,
         label: 'MenuText',
         subLabel: 'any_subLabel',
         url: 'google.com.br',
       },
       {
-        id: '123',
+        id: `${Math.random() * Math.random()*131}`,
         label: 'MenuText',
         url: 'google.com.br',
       },
       {
-        id: '123',
-        label: 'MenuText',
-        subLabel: 'any_subLabel',
-        url: 'google.com.br',
+        id: `${Math.random() * Math.random()*131}`,
+        label: 'Contato',
+        url: '/contato',
       },
       {
-        id: '123',
+        id: `${Math.random() * Math.random()*131}`,
         label: 'MenuText',
         url: 'google.com.br',
       },

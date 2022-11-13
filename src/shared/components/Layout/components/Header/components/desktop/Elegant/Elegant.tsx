@@ -13,8 +13,16 @@ export const Elegant = (data: HeaderTypes) => {
   return (
     <Container scrolled={scrolled}>
       <Logo data={data.logo} scrolled={scrolled} />
-      <ListItems MenuItems={data.MenuItens} scrolled={scrolled} />
-      <MenuIcon handleClick={OpenMenu} iconColor="white" scrolled={scrolled} />
+      <ListItems
+        MenuItems={data.MenuItens}
+        scrolled={scrolled}
+        whiteBackground={data.whiteBackground}
+      />
+      <MenuIcon
+        handleClick={OpenMenu}
+        iconColor={data.whiteBackground ? 'black' : 'white'}
+        scrolled={scrolled}
+      />
       <MobileContainer data={{ ...data, handleClose: CloseMenu, open }} />
     </Container>
   );

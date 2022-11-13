@@ -32,4 +32,5 @@ export interface HeaderTypes {
     social: SocialTypes
     mobileHeader?: mobileHeaders
     headerSelected?: Headers
+    whiteBackground?:boolean
 }
