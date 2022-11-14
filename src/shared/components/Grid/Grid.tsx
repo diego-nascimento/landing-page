@@ -17,9 +17,9 @@ export const Grid = ({
   columnsAmount = 3,
 }: Props) => {
   const columns = useMemo(() => {
-    if (columnsAmount === 2) return 'md:grid-cols-2  grid-cols-1';
+    if (columnsAmount === 2) return 'lg:grid-cols-2  grid-cols-1';
     if (columnsAmount === 3) return 'md:grid-cols-3 grid-cols-1';
-    return 'lg:grid-cols-4  md:grid-cols-2 grid-cols-1';
+    return 'lg:grid-cols-4  md:grid-cols-2 grid-cols-1 gap-5';
   }, [columnsAmount]);
   return (
     <section
@@ -28,7 +28,7 @@ export const Grid = ({
       } p-5 pt-0 `}
     >
       {!!title && <Title tag="h1" text={title} titleColor={titleColor} />}
-      <ul className={`grid mt-0  ${columns} w-full`}>{children}</ul>
+      <ul className={`grid mt-0  ${columns} w-full gap-10`}>{children}</ul>
     </section>
   );
 };

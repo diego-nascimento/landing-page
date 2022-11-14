@@ -1,9 +1,15 @@
 import { Grid } from '@/shared';
 import React from 'react';
-import { Container, Header, Box } from './components';
+import { Container, Header, Box, Input } from './components';
 import { FaUserCircle, FaTools } from 'react-icons/fa';
+import { useFormInput } from '@/shared/hooks';
+import { schema } from './schema';
 
 export const Section1 = () => {
+  const { errors, register, onSubmit } = useFormInput({
+    yupSchema: schema,
+  });
+
   return (
     <Container>
       <Header />
@@ -14,7 +20,22 @@ export const Section1 = () => {
           text="Nos envie um email em caso de alguma duvida"
           color="#8f42ec"
         >
-          asd
+          <Input
+            placeholder="Nome"
+            type="text"
+            field="name"
+            register={register}
+            errors={errors}
+            color={'#8f42ec'}
+          />
+          <Input
+            placeholder="E-mail"
+            type="text"
+            field="email"
+            register={register}
+            errors={errors}
+            color={'#8f42ec'}
+          />
         </Box>
         <Box
           title="Chat online"
