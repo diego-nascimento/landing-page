@@ -21,13 +21,15 @@ const motionAnimation = {
 
 export const Container = ({ children, open }: Props) => {
   return (
-    open && (
-      <motion.div
-        className={`w-screen h-screen absolute top-0 left-0 bg-black bg-opacity-80 flex justify-center items-center flex-col`}
-        {...motionAnimation}
-      >
-        {children}
-      </motion.div>
-    )
+    <>
+      {open && (
+        <motion.div
+          className={`w-screen h-screen absolute top-0 left-0 bg-black bg-opacity-80 flex justify-center items-center flex-col`}
+          {...motionAnimation}
+        >
+          {children}
+        </motion.div>
+      )}
+    </>
   );
 };

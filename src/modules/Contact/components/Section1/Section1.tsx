@@ -1,6 +1,6 @@
-import { Grid } from '@/shared';
+import { Button, Grid, Input } from '@/shared';
 import React from 'react';
-import { Container, Header, Box, Input } from './components';
+import { Container, Header, Box } from './components';
 import { FaUserCircle, FaTools } from 'react-icons/fa';
 import { useFormInput } from '@/shared/hooks';
 import { schema } from './schema';
@@ -20,30 +20,56 @@ export const Section1 = () => {
           text="Nos envie um email em caso de alguma duvida"
           color="#8f42ec"
         >
-          <Input
-            placeholder="Nome"
-            type="text"
-            field="name"
-            register={register}
-            errors={errors}
-            color={'#8f42ec'}
-          />
-          <Input
-            placeholder="E-mail"
-            type="text"
-            field="email"
-            register={register}
-            errors={errors}
-            color={'#8f42ec'}
-          />
+          <form className="w-full" onSubmit={onSubmit}>
+            <Input
+              placeholder="Nome"
+              type="text"
+              field="name"
+              register={register}
+              errors={errors}
+              color={'#8f42ec'}
+              tag={'input'}
+            />
+            <Input
+              placeholder="E-mail"
+              type="text"
+              field="email"
+              register={register}
+              errors={errors}
+              color={'#8f42ec'}
+              tag={'input'}
+            />
+            <Input
+              placeholder="Sua mensagem"
+              type="text"
+              field="message"
+              register={register}
+              errors={errors}
+              color={'#8f42ec'}
+              tag={'textarea'}
+            />
+            <Button
+              text="Enviar mensagem"
+              background={'#8f42ec'}
+              textColor={'white'}
+              type={'submit'}
+            />
+          </form>
         </Box>
         <Box
           title="Chat online"
           text="Se precisar, pode falar diretamente conosco"
           icon={FaTools}
           color="#6797ff"
+          withShadow={false}
         >
-          asd
+          <Button
+            text="Chat com o suporte"
+            background={'#6797ff'}
+            textColor={'white'}
+            type={'button'}
+            onClick={() => console.log('abriu o whatsapp')}
+          />
         </Box>
       </Grid>
     </Container>
