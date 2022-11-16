@@ -10,7 +10,7 @@ export const Title = ({ tag, text, titleColor }: Props) => {
   const TagName = tag;
   return (
     <TagName
-      className={`text-3xl md:text-5xl font-semibold font-sans text-center select-none ${
+      className={`text-3xl md:text-4xl font-semibold font-sans text-center select-none ${
         titleColor === 'white' ? 'text-white' : 'text-black'
       } `}
     >

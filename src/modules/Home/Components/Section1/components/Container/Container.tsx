@@ -16,7 +16,7 @@ export const Container = ({ children }: Props) => {
         backgroundColor="white"
         backgroundImages={{
           desktop: {
-            url: 'http://localhost:3000/fundo-teste.jpg',
+            url: '/fundo-teste.jpg',
           },
         }}
         paralax={true}

@@ -9,6 +9,7 @@ export * from './Typography'
 export * from './Grid-1_2'
 export * from './Input'
 export * from './Button'
+export * from './Accordion'
 
 
 
