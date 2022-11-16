@@ -12,10 +12,10 @@ interface Props {
 
 export const Header = ({ icon: Icon, color, text, title }: Props) => {
   return (
-    <>
+    <div className="text-center flex items-center flex-col">
       {Icon && <Icon size={60} color={color} className="mb-4" />}
       {title && <Title color={color} text={title} />}
       {text && <Text text={text} />}
-    </>
+    </div>
   );
 };

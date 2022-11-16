@@ -21,7 +21,9 @@ export const Box = ({
 }: Props) => {
   const shadow = withShadow ? 'shadow-xl' : '';
   return (
-    <div className={`${shadow} p-8 flex flex-col items-center justify-center`}>
+    <div
+      className={`${shadow} p-5 md:p-8 flex flex-col items-center justify-center`}
+    >
       <Header color={color} icon={icon} text={text} title={title} />
       {children}
     </div>

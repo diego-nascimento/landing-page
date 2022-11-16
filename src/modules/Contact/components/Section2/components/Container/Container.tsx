@@ -10,7 +10,7 @@ export const Container = ({ children }: Props) => {
     <BelowMenu>
       <FullWidthContainer>
         <NotFullWidthContainer>
-          <div className="w-full   mt-10">
+          <div className="w-full mt-10">
             <div className="w-full flex justify-center flex-col items-center px-5">
               {children}
             </div>
