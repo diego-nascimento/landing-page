@@ -11,14 +11,8 @@ const HeaderPropsMocked: HeaderTypes = {
     MenuItens: [
       {
         id: `${Math.random() * Math.random()*131}`,
-        label: 'MenuText',
-        subLabel: 'any_subLabel',
-        url: 'google.com.br',
-      },
-      {
-        id: `${Math.random() * Math.random()*131}`,
-        label: 'MenuText',
-        url: 'google.com.br',
+        label: 'Sobre',
+        url: '/',
       },
       {
         id: `${Math.random() * Math.random()*131}`,
@@ -27,8 +21,15 @@ const HeaderPropsMocked: HeaderTypes = {
       },
       {
         id: `${Math.random() * Math.random()*131}`,
-        label: 'MenuText',
+        label: 'Produtos',
+        url: '/produtos',
+      },
+      
+      {
+        id: `${Math.random() * Math.random()*131}`,
+        label: 'Preços',
         url: 'google.com.br',
+        emphasis: true
       },
     ],
     social: {

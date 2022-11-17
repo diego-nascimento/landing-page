@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { MenuItemTypes } from '../../../../../Container/types';
+import { Item } from '../Item';
 
 interface Props {
   MenuItems: MenuItemTypes[];
@@ -11,17 +12,13 @@ interface Props {
 export const ListItems = ({ MenuItems, scrolled, whiteBackground }: Props) => {
   return (
     <ul className=" gap-12 md:flex hidden md:flex-row">
-      {MenuItems.map((Item) => (
-        <Link href={Item.url} key={Item.id} passHref>
-          <li>
-            <span
-              className={`${
-                scrolled || whiteBackground ? 'text-black' : 'text-white'
-              } uppercase text-xl tracking-widest font-bold cursor-pointer md:text-base `}
-            >
-              {Item.label}
-            </span>
-          </li>
+      {MenuItems.map((MenuItem) => (
+        <Link href={MenuItem.url} key={MenuItem.id} passHref>
+          <Item
+            MenuItem={MenuItem}
+            scrolled={scrolled}
+            whiteBackground={whiteBackground}
+          />
         </Link>
       ))}
     </ul>

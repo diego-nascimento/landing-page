@@ -18,6 +18,7 @@ export type MenuItemTypes = {
     url: string
     label: string
     subLabel?: string
+    emphasis?: boolean
 }
 
 export type SocialTypes = {
