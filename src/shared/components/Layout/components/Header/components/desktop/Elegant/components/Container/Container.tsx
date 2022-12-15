@@ -14,7 +14,7 @@ export const Container = ({ children, scrolled }: Props) => {
     <div
       className={`w-full fixed top-0 left-0 transition-colors  z-20 ${
         scrolled ? 'bg-white shadow-lg' : 'bg-transparent'
-      }`}
+      } select-none`}
     >
       <FullWidthContainer>
         <NotFullWidthContainer>

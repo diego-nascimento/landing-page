@@ -1,6 +1,6 @@
-import { Button, Grid, Input } from '@/shared';
+import { Button, Grid, Input, ModuleHeader } from '@/shared/components';
 import React from 'react';
-import { Container, Header, Box } from './components';
+import { Container, Box } from './components';
 import { FaUserCircle, FaTools } from 'react-icons/fa';
 import { useFormInput } from '@/shared/hooks';
 import { schema } from './schema';
@@ -14,7 +14,10 @@ export const Section1 = () => {
 
   return (
     <Container>
-      <Header />
+      <ModuleHeader
+        title="Contato"
+        text="Por favor, entre em contato se tiver alguma duvida"
+      />
       <Grid columnsAmount={2} withShadow={false}>
         <Box
           title="Envie um email"

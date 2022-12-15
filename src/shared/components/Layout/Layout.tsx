@@ -23,7 +23,7 @@ interface Props {
 
 export const Layout = ({ data, children }: Props) => {
   return (
-    <div className="min-h-screen flex flex-col justify-between">
+    <div className="min-h-screen flex flex-col justify-between bg-gradient-to-t from-slate-50  to-transparent">
       <Header
         headerProps={data.HeaderProps}
         headerSelected={data.headerSelected}
