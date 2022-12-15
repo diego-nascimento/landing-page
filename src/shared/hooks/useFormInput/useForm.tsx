@@ -1,12 +1,17 @@
-import { useForm } from 'react-hook-form';
+import { FieldValues, useForm } from 'react-hook-form';
 import { AnyObjectSchema } from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
+export type onSubmitType = (data: FieldValues) => Promise<null>;
 interface Props {
   yupSchema: AnyObjectSchema;
+  onSubmit: onSubmitType;
 }
 
-export const useFormInput = ({ yupSchema }: Props) => {
+export const useFormInput = ({
+  yupSchema,
+  onSubmit: handleOnSubmit,
+}: Props) => {
   const {
     register,
     handleSubmit,
@@ -15,7 +20,7 @@ export const useFormInput = ({ yupSchema }: Props) => {
     resolver: yupResolver(yupSchema),
     reValidateMode: 'onChange',
   });
-  const onSubmit = handleSubmit((data) => console.log(data));
+  const onSubmit = handleSubmit((data) => handleOnSubmit(data));
 
   return {
     register,

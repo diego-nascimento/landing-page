@@ -4,10 +4,12 @@ import { Container, Header, Box } from './components';
 import { FaUserCircle, FaTools } from 'react-icons/fa';
 import { useFormInput } from '@/shared/hooks';
 import { schema } from './schema';
+import { handleFormInput } from './handleFormInput';
 
 export const Section1 = () => {
   const { errors, register, onSubmit } = useFormInput({
     yupSchema: schema,
+    onSubmit: handleFormInput,
   });
 
   return (

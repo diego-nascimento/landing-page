@@ -11,6 +11,11 @@ const HeaderPropsMocked: HeaderTypes = {
     MenuItens: [
       {
         id: `${Math.random() * Math.random()*131}`,
+        label: 'Blog',
+        url: '/blog',
+      },
+      {
+        id: `${Math.random() * Math.random()*131}`,
         label: 'Sobre',
         url: '/',
       },
