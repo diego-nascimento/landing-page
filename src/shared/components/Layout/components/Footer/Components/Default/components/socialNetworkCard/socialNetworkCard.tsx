@@ -44,7 +44,7 @@ export const Content = (data: Props) => {
     return `${data.numberOfFollows?.toString()}`;
   }, [data.numberOfFollows]);
   return (
-    <li className="px-2 flex justify-center sm:justify-start hover:scale-105 transition-transform duration-500">
+    <li className="px-2 flex justify-center sm:justify-start hover:scale-105 transition-transform duration-500 bg-white">
       <div className="w-full  py-5 flex flex-col justify-center items-center  shadow-xl rounded-lg">
         {handleIcon()}
         {data.numberOfFollows && (
