@@ -14,7 +14,7 @@ export interface Props {
 
 export const Product = (data: Props) => {
   return (
-    <div className="w-full pt-10 md:px-10 px-2 ">
+    <div className="w-full pt-10 md:px-10 px-2">
       <Grid columnsAmount={2}>
         <Description {...data} />
         <ImageDescription {...data} />

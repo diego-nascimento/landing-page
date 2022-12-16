@@ -14,9 +14,12 @@ export const Description = (data: Props) => {
       <p className="mt-5 text-gray-400  text-md md:text-lg font-medium ">
         {data.description}
       </p>
-      <a href={data.callToAction}>
+      <a
+        href={data.callToAction}
+        className="w-full flex justify-center md:justify-start"
+      >
         <button
-          className="mt-5 flex justify-center items-center self-center md:self-start w-52 px-4 py-2 md:px-10 md:py-4 rounded-full text-white font-bold uppercase select-none text-md "
+          className="mt-5 flex justify-center items-center  md:self-start w-52 px-4 py-2 md:px-10 md:py-4 rounded-full text-white font-bold uppercase select-none text-md "
           style={{ backgroundColor: data.color }}
         >
           Saiba mais
