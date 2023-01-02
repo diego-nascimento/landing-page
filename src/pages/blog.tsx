@@ -7,6 +7,7 @@ import { LayoutProps } from '@/shared';
 
 interface Props extends LayoutProps {}
 
+//1a5w6d
 const BlogPage = (data: Props) => {
   return (
     <BlogComponent
